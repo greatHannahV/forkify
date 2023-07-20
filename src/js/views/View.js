@@ -13,8 +13,6 @@ export default class View {
 
     }
     update(data) {
-        if (!data || (Array.isArray(data) && data.length === 0)) return this.renderError();
-
         this._data = data;
         const newMarkup = this._generateMarkup();
 
@@ -26,7 +24,9 @@ export default class View {
             const curEl = currentElements[i];
 
             //updates chaged text
-            if (!newEl.isEqualNode(curEl) && newEl.firstChild.nodeValue.trim() !== '') {
+            if (!newEl.isEqualNode(curEl) && newEl.firstChild &&
+                newEl.firstChild.nodeValue &&
+                newEl.firstChild.nodeValue.trim() !== '') {
                 curEl.textContent = newEl.textContent;
             }
             //updates changed attributes
