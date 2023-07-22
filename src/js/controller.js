@@ -129,6 +129,7 @@ const init = function() {
     paginationView.addHandlerClick(controlPagination);
     bookmarksView.addHandlerRender(controlBookmarks);
     addRecipeView.addHandlerUpload(controlAddRecipe)
+    console.log('welcome');
 
 }
 init();
