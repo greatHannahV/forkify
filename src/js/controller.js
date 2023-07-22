@@ -127,6 +127,7 @@ const controlAddRecipe = async function(newRecipe) {
  */
 const newFeature = function() {
     console.log('welcome to git');
+    console.log('a new branch');
 }
 
 const init = function() {
