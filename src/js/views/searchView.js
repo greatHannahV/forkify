@@ -1,3 +1,4 @@
+import resultsView from "./resultsView";
 class SearchView {
     _parentEl = document.querySelector('.search');
     getQuery() {
