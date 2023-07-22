@@ -121,6 +121,14 @@ const controlAddRecipe = async function(newRecipe) {
     location.reload();
 
 }
+
+/**
+ * not need for the app
+ */
+const newFeature = function() {
+    console.log('welcome to git');
+}
+
 const init = function() {
     recipeView.addHandlerRender(controlRecipes);
     recipeView.addHandlerUpdateServings(controlServings);
@@ -129,7 +137,7 @@ const init = function() {
     paginationView.addHandlerClick(controlPagination);
     bookmarksView.addHandlerRender(controlBookmarks);
     addRecipeView.addHandlerUpload(controlAddRecipe)
-    console.log('welcome');
+    newFeature();
 
 }
 init();
