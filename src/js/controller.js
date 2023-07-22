@@ -126,7 +126,7 @@ const controlAddRecipe = async function(newRecipe) {
  * not need for the app
  */
 const newFeature = function() {
-    console.log('welcome to git');
+    console.log('welcome to  the application');
 }
 
 const init = function() {
